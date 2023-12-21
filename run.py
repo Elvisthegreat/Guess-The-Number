@@ -13,6 +13,9 @@ def ask_user_for_name():
 return_name = ask_user_for_name()
 print(return_name)
 
+"""
+A count down function from 10 t0 0 before the game begin
+"""
 def loading_game_():
     print("Loading Game...\n")
 
@@ -26,25 +29,36 @@ loading_game_()
 """
 Main game board section, starting from 5 to 30 
 """
+
 def guessing_game_step_one():
     # Guessing from 0 to 5 with 2 chances trial
     print("I'm thinking of a number from 0 to 5, can you guess what number it is?\n ")
-
-    guessing_number = random.randint(0, 5)
+    
+    """
+    Assigned the number am thinking to a variable guessing_number,
+    and also the chances of trial for the user
+    """
+    guessing_number = random.randint(0, 0)
     trial = 2
 
     while trial > 0:
 
-        guessing_the_number = int(input('Can you try and guess?'))
+        guessing_the_number = int(input('Can you try and guess the number?'))
         
         if guessing_the_number == guessing_number:
             print(f"Well done! Nice guessing")
             return
         else:
+            #Decrement the chances of trial by 1
             trial-=1
+
+            #Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"No, You have {trial} more trial(s) to guess the number.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
                 
-guessing_game_step_one()
+
+guess_step_one = guessing_game_step_one()
+print(guess_step_one)
+print("Moving to stage 2")
