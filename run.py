@@ -27,7 +27,7 @@ def loading_game_():
 loading_game_()
 
 """
-Main game board section, starting from 5 to 30 
+Main game board section
 """
 
 def guessing_game_step_one():
@@ -61,4 +61,30 @@ def guessing_game_step_one():
 
 guess_step_one = guessing_game_step_one()
 print(guess_step_one)
-print("Moving to stage 2")
+print("Moving to stage 2\n")
+
+def guessing_game_step_two():
+
+    print("Welcome to stage 2\n")
+    print("I'm thinking of a number from 1 to 10 , can you guess what number it is?\n ")
+
+    guessing_number2 = random.randint(1, 9)
+    trail = 3
+
+    while trial > 0:
+        guessing_the_number_two = int(input('Can you try and guess?'))
+
+        if guessing_the_number_two == guessing_number2:
+            print("Well done! You guessed correctly")
+            return
+        else:
+            trial-=1
+            if trial > 0:
+                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
+            else:
+                print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number2}.")
+
+guess_step_two = guessing_game_step_two()
+print(guess_step_two)
+print("Moving on to stage 3")
+
