@@ -69,7 +69,7 @@ def guessing_game_step_two():
     print("I'm thinking of a number from 1 to 10 , can you guess what number it is?\n ")
 
     guessing_number2 = random.randint(1, 9)
-    trail = 3
+    trial = 3
 
     while trial > 0:
         guessing_the_number_two = int(input('Can you try and guess?'))
