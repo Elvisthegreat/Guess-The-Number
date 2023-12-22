@@ -8,7 +8,7 @@ def ask_user_for_name():
     """
     print('Initializing...! Starting game in process...')
     user_name = input('Please enter a Name: ')
-    return f"Thank you, {user_name} for your name!\n"
+    return f"Thank you, {user_name}! Welcome.\n"
     
 return_name = ask_user_for_name()
 print(return_name)
@@ -61,14 +61,14 @@ def guessing_game_step_one():
 
 guess_step_one = guessing_game_step_one()
 print(guess_step_one)
-print("Moving to stage 2\n")
+
 
 def guessing_game_step_two():
 
     print("Welcome to stage 2\n")
     print("I'm thinking of a number from 1 to 10 , can you guess what number it is?\n ")
 
-    guessing_number2 = random.randint(1, 9)
+    guessing_number2 = 2
     trial = 3
 
     while trial > 0:
@@ -86,5 +86,28 @@ def guessing_game_step_two():
 
 guess_step_two = guessing_game_step_two()
 print(guess_step_two)
-print("Moving on to stage 3")
+print("Moving on to stage 3\n")
 
+def guessing_game_step_three():
+
+    print("Welcome to stage 3\n")
+    print("I'm thinking of a number from 10 to 20 , can you guess what number it is?\n ")
+
+    guessing_number3 = 19
+    trial = 4
+    
+    while trial > 0:
+        guessing_the_number_three = int(input('Can you try and guess?'))
+
+        if guessing_the_number_three == guessing_number3:
+            print("Well done! You guessed correctly")
+            return
+        else:
+            trial-=1
+            if trial > 0:
+                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
+            else:
+                print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number3}.")
+
+guess_step_three = guessing_game_step_three()
+print(guess_step_three)
