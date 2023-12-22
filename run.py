@@ -58,7 +58,9 @@ def guessing_game_step_one():
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
                 
-
+"""
+Assigning the called function to a variable
+"""
 guess_step_one = guessing_game_step_one()
 print(guess_step_one)
 
@@ -70,20 +72,24 @@ def guessing_game_step_two():
 
     guessing_number2 = 2
     trial = 3
-
+      
     while trial > 0:
         guessing_the_number_two = int(input('Can you try and guess?\n'))
 
         if guessing_the_number_two == guessing_number2:
             print("Well done! You guessed correctly")
             return
-        else:
+        else: 
+            #Decrement the chances of trial by 1
             trial-=1
+            #Returning how many trials left to the user to try again
             if trial > 0:
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number2}.")
-
+"""
+Assigning the called function to a variable
+"""
 guess_step_two = guessing_game_step_two()
 print(guess_step_two)
 
@@ -102,12 +108,16 @@ def guessing_game_step_three():
             print("Well done! You guessed correctly")
             return
         else:
+            #Decrement the chances of trial by 1
             trial-=1
+            #Returning how many trials left to the user to try again
             if trial > 0:
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number3}.")
-
+"""
+Assigning the called function to a variable
+"""
 guess_step_three = guessing_game_step_three()
 print(guess_step_three)
 
@@ -125,12 +135,16 @@ def guessing_game_step_four():
             print('Well done! You guessed correctly')
             return
         else:
+            #Decrement the chances of trial by 1
             trial-=1
-            if trial > 0:  
+            if trial > 0: 
+                #Returning how many trials left to the user to try again 
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")  
-
+"""
+Assigning the called function to a variable
+"""
 guess_step_four = guessing_game_step_four()
 print(guess_step_four)
 
