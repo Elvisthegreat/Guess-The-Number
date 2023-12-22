@@ -43,7 +43,7 @@ def guessing_game_step_one():
 
     while trial > 0:
 
-        guessing_the_number = int(input('Can you try and guess the number?'))
+        guessing_the_number = int(input('Can you try and guess the number?\n'))
         
         if guessing_the_number == guessing_number:
             print(f"Well done! Nice guessing")
@@ -54,7 +54,7 @@ def guessing_game_step_one():
 
             #Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
                 
@@ -72,7 +72,7 @@ def guessing_game_step_two():
     trial = 3
 
     while trial > 0:
-        guessing_the_number_two = int(input('Can you try and guess?'))
+        guessing_the_number_two = int(input('Can you try and guess?\n'))
 
         if guessing_the_number_two == guessing_number2:
             print("Well done! You guessed correctly")
@@ -80,13 +80,12 @@ def guessing_game_step_two():
         else:
             trial-=1
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number2}.")
 
 guess_step_two = guessing_game_step_two()
 print(guess_step_two)
-print("Moving on to stage 3\n")
 
 def guessing_game_step_three():
 
@@ -97,7 +96,7 @@ def guessing_game_step_three():
     trial = 4
     
     while trial > 0:
-        guessing_the_number_three = int(input('Can you try and guess?'))
+        guessing_the_number_three = int(input('Can you try and guess?\n'))
 
         if guessing_the_number_three == guessing_number3:
             print("Well done! You guessed correctly")
@@ -105,9 +104,33 @@ def guessing_game_step_three():
         else:
             trial-=1
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trial to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number3}.")
 
 guess_step_three = guessing_game_step_three()
 print(guess_step_three)
+
+def guessing_game_step_four():
+    print("Welcome to stage 4\n")
+    print("I'm thinking of a number from 20 to 30 , can you guess what number it is?\n ")
+
+    guessing_number4 = 21
+    trial = 5
+
+    while trial > 0:
+        guessing_the_number_four = int(input("Can you try and guess?\n"))
+
+        if guessing_the_number_four == guessing_number4:
+            print('Well done! You guessed correctly')
+            return
+        else:
+            trial-=1
+            if trial > 0:  
+                print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
+            else:
+                print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")  
+
+guess_step_four = guessing_game_step_four()
+print(guess_step_four)
+
