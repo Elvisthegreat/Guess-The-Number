@@ -134,3 +134,25 @@ def guessing_game_step_four():
 guess_step_four = guessing_game_step_four()
 print(guess_step_four)
 
+
+"""
+This section of code's are not mine, found this from a research
+carried out, and i thought it was also a good option to add to 
+the game function
+"""
+def guess_the_number():
+    number = random.randint(1, 100)
+    print("I'm thinking of a number between 1 and 100. Can you guess what it is?")
+    for i in range(10):
+        guess = int(input("Guess #" + str(i+1) + ": "))
+        if guess < number:
+            print("Too low!")
+        elif guess > number:
+            print("Too high!")
+        else:
+            print("Congratulations! You guessed the number in " + str(i+1) + " guesses.")
+            return
+    print("Sorry, you didn't guess the number. It was " + str(number) + ".")
+
+guess_the_number()
+
