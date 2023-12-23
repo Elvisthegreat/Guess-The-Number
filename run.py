@@ -1,4 +1,40 @@
-import random 
+import random
+
+def user_validation(username):
+    # Check if the user exists in the database or file
+    users = {}
+    if username in users:
+        return True
+    else: 
+        return False
+
+def sign_in():
+
+    username = input("Enter your username: ")
+    password= input("Enter your password: ")
+       # Check if the user exists after his inputs
+    if user_validation(username):
+        if users[username] == password:
+            print("Welcome back!")
+        else:
+            print("Incorrect input. Please try again.")
+    else:
+        print('This input does not exist. Please sign up.')
+        sign_up()
+
+def sign_up():
+    username = input("Enter your desired username: ")
+    password = input("Enter your desired password: ")
+
+    # Store the username and password in a database or file with curly braces
+    users = {}
+    users[username] == password
+    print("Sign up successful!")
+    sign_in()
+
+sign_in()
+user_validation()
+
 # Ask the user for their name
 def ask_user_for_name():
     """
@@ -7,7 +43,7 @@ def ask_user_for_name():
     with the name inputed 
     """
     print('Initializing...! Starting game in process...')
-    user_name = input('Please enter a Name: ')
+    user_name = input('Please enter your sign up Name: ')
     return f"Thank you, {user_name}! Welcome.\n"
     
 return_name = ask_user_for_name()
