@@ -9,20 +9,33 @@ def user_validation(username):
         return False
 
 def sign_in():
-
-    username = input("Enter your username: ")
-    password= input("Enter your password: ")
-       # Check if the user exists after his inputs
-    if user_validation(username):
-        if users[username] == password:
-            print("Welcome back!")
+    """
+    Asking the user to know if he's already a user if y,
+    he will be prompt to enter his details, but if n, he will have to sign up
+    """
+    user_validating = True
+    while user_validating:
+        
+        user_validating_sign_in = input("Are you already a user? y/n ")
+        if user_validating_sign_in.upper() == "Y":
+            username = input("Enter your username: ")
+            password = input("Enter your password: ")
+            # Check if the user exists after his inputs
+            if user_validation(username):
+                if users[username] == password:
+                    print("Welcome back!")
+                else:
+                    print("Incorrect input. Please try again.")
+            else:
+                print('This input does not exist. Please sign up.')
+                sign_up()
+        elif user_validating_sign_in.upper() == "N":
+            sign_up()
         else:
-            print("Incorrect input. Please try again.")
-    else:
-        print('This input does not exist. Please sign up.')
-        sign_up()
-
+            print("Invalid input. Please enter 'y' or 'n'.\n")
 def sign_up():
+
+    print("Please sign up")
     username = input("Enter your desired username: ")
     password = input("Enter your desired password: ")
 
