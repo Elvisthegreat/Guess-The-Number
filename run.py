@@ -1,10 +1,11 @@
 import random
 
+# Users dictionary storage
 users = {}
 
 def user_validation(username):
     # Check if the user exists in the database or file
-    #Global keyword to access the users database storage
+    # Global keyword to access dictionary storage
     global users
     if username in users:
         return True
@@ -28,17 +29,18 @@ def sign_in():
                 if users[user_name] == user_password:
                     print("Welcome back!")
 
-                    #Break the looping if user is validated
+                    # Break the looping if user is validated
                     user_validating = False
 
                 else:
                     print("Incorrect input. Please try again.")
             else:
                 print('This input does not exist.\n')
-                #Call the sign_up function if the user input does not exist
+
+                # Call the sign_up function if the user input does not exist
                 sign_up()
 
-                #Break the looping after signing up
+                # Break the looping after signing up
                 user_validating = False
 
         elif user_validating_sign_in.upper() == "N":
@@ -47,7 +49,8 @@ def sign_in():
             #Break the looping after signing up
             user_validating = False
 
-        else: #Return this if the user enter a different option
+        else: 
+            #Return invalid input if the user enter a different option
             print("Invalid input. Please enter 'y' or 'n'.\n")
 
 def sign_up():
@@ -107,11 +110,16 @@ def guessing_game_step_one():
 
     while trial > 0:
 
-        guessing_the_number = int(input('Can you try and guess the number?\n'))
+        # Use a try and except block to validate the user input
+        try:
+            guessing_the_number = int(input('Can you try and guess the number?\n'))
+        except ValueError:
+            print('Invalid input. Please try again.\n')
+            continue
         
         if guessing_the_number == guessing_number:
             print(f"Well done! Nice guessing")
-            return
+        
         else:
             # Decrement the chances o f trial by 1
             trial-=1
@@ -121,7 +129,7 @@ def guessing_game_step_one():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
-                
+
 """
 Assigning the called function to a variable
 """
@@ -233,4 +241,5 @@ def guess_the_number():
     print("Sorry, you didn't guess the number. It was " + str(number) + ".")
 
 guess_the_number()
+print("Congratulation for completing the game to the end")
 
