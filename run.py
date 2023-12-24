@@ -1,8 +1,11 @@
 import random
 
+users = {}
+
 def user_validation(username):
     # Check if the user exists in the database or file
-    users = {}
+    #Global keyword to access the users database storage
+    global users
     if username in users:
         return True
     else: 
@@ -11,42 +14,54 @@ def user_validation(username):
 def sign_in():
     """
     Asking the user to know if he's already a user if y,
-    he will be prompt to enter his details, but if n, he will have to sign up
+    he will be prompt to enter his user's details, but if n, he will have to sign up
     """
     user_validating = True
     while user_validating:
         
         user_validating_sign_in = input("Are you already a user? y/n ")
         if user_validating_sign_in.upper() == "Y":
-            username = input("Enter your username: ")
-            password = input("Enter your password: ")
+            user_name = input("Enter your username: ")
+            user_password = input("Enter your password: ")
             # Check if the user exists after his inputs
-            if user_validation(username):
-                if users[username] == password:
+            if user_validation(user_name):
+                if users[user_name] == user_password:
                     print("Welcome back!")
+
+                    #Break the looping if user is validated
+                    user_validating = False
+
                 else:
                     print("Incorrect input. Please try again.")
             else:
-                print('This input does not exist. Please sign up.')
+                print('This input does not exist.\n')
+                #Call the sign_up function if the user input does not exist
                 sign_up()
+
+                #Break the looping after signing up
+                user_validating = False
+
         elif user_validating_sign_in.upper() == "N":
             sign_up()
-        else:
+
+            #Break the looping after signing up
+            user_validating = False
+
+        else: #Return this if the user enter a different option
             print("Invalid input. Please enter 'y' or 'n'.\n")
+
 def sign_up():
 
-    print("Please sign up")
+    print("Please sign up \n")
     username = input("Enter your desired username: ")
     password = input("Enter your desired password: ")
 
-    # Store the username and password in a database or file with curly braces
-    users = {}
-    users[username] == password
-    print("Sign up successful!")
-    sign_in()
+    # Store the username and password in a dictionary
+    users[username] = password
+    print("Sign up successful!\n")
 
+#Calling the main sign_in function in the program
 sign_in()
-user_validation()
 
 # Ask the user for their name
 def ask_user_for_name():
@@ -57,7 +72,7 @@ def ask_user_for_name():
     """
     print('Initializing...! Starting game in process...')
     user_name = input('Please enter your sign up Name: ')
-    return f"Thank you, {user_name}! Welcome.\n"
+    return f"Thank you, {user_name}! Welcome to the guessing world.\n"
     
 return_name = ask_user_for_name()
 print(return_name)
@@ -98,7 +113,7 @@ def guessing_game_step_one():
             print(f"Well done! Nice guessing")
             return
         else:
-            #Decrement the chances of trial by 1
+            # Decrement the chances o f trial by 1
             trial-=1
 
             #Returning how many trials left to the user to try again
@@ -129,9 +144,9 @@ def guessing_game_step_two():
             print("Well done! You guessed correctly")
             return
         else: 
-            #Decrement the chances of trial by 1
+            # Decrement the chances of trial by 1
             trial-=1
-            #Returning how many trials left to the user to try again
+            # Returning how many trials left to the user to try again
             if trial > 0:
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
@@ -157,9 +172,9 @@ def guessing_game_step_three():
             print("Well done! You guessed correctly")
             return
         else:
-            #Decrement the chances of trial by 1
+            # Decrement the chances of trial by 1
             trial-=1
-            #Returning how many trials left to the user to try again
+            # Returning how many trials left to the user to try again
             if trial > 0:
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
@@ -184,10 +199,10 @@ def guessing_game_step_four():
             print('Well done! You guessed correctly')
             return
         else:
-            #Decrement the chances of trial by 1
+            # Decrement the chances of trial by 1
             trial-=1
             if trial > 0: 
-                #Returning how many trials left to the user to try again 
+                # Returning how many trials left to the user to try again 
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")  
