@@ -1,5 +1,6 @@
+# import the random module
 import random
-
+ 
 # Users dictionary storage
 users = {}
 
@@ -20,7 +21,7 @@ def sign_in():
     user_validating = True
     while user_validating:
         
-        user_validating_sign_in = input("Are you already a user? y/n ")
+        user_validating_sign_in = input("Do you already have an account? Y/N \n")
         if user_validating_sign_in.upper() == "Y":
             user_name = input("Enter your username: ")
             user_password = input("Enter your password: ")
@@ -118,7 +119,8 @@ def guessing_game_step_one():
             continue
         
         if guessing_the_number == guessing_number:
-            print(f"Well done! Nice guessing")
+            print(f"Well done! Nice guessing\n")
+            return True
         
         else:
             # Decrement the chances o f trial by 1
@@ -129,6 +131,7 @@ def guessing_game_step_one():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
+                return False
 
 """
 Assigning the called function to a variable
@@ -142,15 +145,21 @@ def guessing_game_step_two():
     print("Welcome to stage 2\n")
     print("I'm thinking of a number from 1 to 10 , can you guess what number it is?\n ")
 
-    guessing_number2 = 2
+    guessing_number2 = random.randint(1, 10)
     trial = 3
       
     while trial > 0:
-        guessing_the_number_two = int(input('Can you try and guess?\n'))
+
+         # Use a try and except block to validate the user input
+        try:
+            guessing_the_number_two = int(input('Can you try and guess?\n'))
+        except ValueError:
+            print('Invalid input. Please try again.\n')
+            continue
 
         if guessing_the_number_two == guessing_number2:
             print("Well done! You guessed correctly")
-            return
+            return True
         else: 
             # Decrement the chances of trial by 1
             trial-=1
@@ -159,6 +168,7 @@ def guessing_game_step_two():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number2}.")
+                return False
 """
 Assigning the called function to a variable
 """
@@ -170,15 +180,21 @@ def guessing_game_step_three():
     print("Welcome to stage 3\n")
     print("I'm thinking of a number from 10 to 20 , can you guess what number it is?\n ")
 
-    guessing_number3 = 19
+    guessing_number3 = random.randint(10, 20)
     trial = 4
     
     while trial > 0:
-        guessing_the_number_three = int(input('Can you try and guess?\n'))
 
+         # Use a try and except block to validate the user input
+        try:
+            guessing_the_number_three = int(input('Can you try and guess?\n'))
+        except ValueError:
+            print('Invalid input. Please try again.\n')
+            continue
+         
         if guessing_the_number_three == guessing_number3:
             print("Well done! You guessed correctly")
-            return
+            return True
         else:
             # Decrement the chances of trial by 1
             trial-=1
@@ -187,6 +203,7 @@ def guessing_game_step_three():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number3}.")
+                return False
 """
 Assigning the called function to a variable
 """
@@ -197,15 +214,21 @@ def guessing_game_step_four():
     print("Welcome to stage 4\n")
     print("I'm thinking of a number from 20 to 30 , can you guess what number it is?\n ")
 
-    guessing_number4 = 21
+    guessing_number4 = random.randint(20, 30)
     trial = 5
 
     while trial > 0:
-        guessing_the_number_four = int(input("Can you try and guess?\n"))
+
+         # Use a try and except block to validate the user input
+        try:
+            guessing_the_number_four = int(input("Can you try and guess?\n"))
+        except ValueError:
+            print('Invalid input. Please try again.\n')
+            continue
 
         if guessing_the_number_four == guessing_number4:
             print('Well done! You guessed correctly')
-            return
+            return True
         else:
             # Decrement the chances of trial by 1
             trial-=1
@@ -213,7 +236,8 @@ def guessing_game_step_four():
                 # Returning how many trials left to the user to try again 
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
-                print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")  
+                print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")
+                return False  
 """
 Assigning the called function to a variable
 """
