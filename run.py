@@ -6,6 +6,9 @@ Imported pickle to save complex data structure
 to the dictionary
 """
 import pickle
+
+# imported time
+import time
  
 # Users dictionary storage
 users = {}
@@ -122,6 +125,7 @@ def loading_game_():
     while loading_game > -1:
         print(f"{loading_game} seconds...\n ")
         loading_game -=1
+        time.sleep(1) # Pause every 1 seconds
     print('Loading Completed\n')
 loading_game_()
 
