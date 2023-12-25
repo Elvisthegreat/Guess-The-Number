@@ -13,6 +13,12 @@ import time
 # Users dictionary storage
 users = {}
 
+"""
+The load_users and save_users were from a research carried out, 
+i wanted to add a function like this to be able to save users details
+permanently but couldn't figure it out by myself, so i
+just browsed it
+"""
 def load_users():
     global users # Access the global variable users
     try:
@@ -156,8 +162,8 @@ def guessing_game_step_one():
             continue
         
         if guessing_the_number == guessing_number:
+            return True # Return the word False along the below print statement
             print(f"Well done! Nice guessing\n")
-            return True
         
         else:
             # Decrement the chances o f trial by 1
@@ -168,7 +174,7 @@ def guessing_game_step_one():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number}.")
-                return False
+                return False # Return the word False along the above print statement
 
 """
 Assigning the called function to a variable
@@ -195,8 +201,8 @@ def guessing_game_step_two():
             continue
 
         if guessing_the_number_two == guessing_number2:
+            return True # Return the word False along the below print statement
             print("Well done! You guessed correctly")
-            return True
         else: 
             # Decrement the chances of trial by 1
             trial-=1
@@ -205,7 +211,8 @@ def guessing_game_step_two():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number2}.")
-                return False
+                return False # Return the word False along the above print statement
+
 """
 Assigning the called function to a variable
 """
@@ -230,8 +237,8 @@ def guessing_game_step_three():
             continue
          
         if guessing_the_number_three == guessing_number3:
+            return True # Return the word False along the below print statement
             print("Well done! You guessed correctly")
-            return True
         else:
             # Decrement the chances of trial by 1
             trial-=1
@@ -240,7 +247,8 @@ def guessing_game_step_three():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number3}.")
-                return False
+                return False # Return the word False along the above print statement
+
 """
 Assigning the called function to a variable
 """
@@ -264,8 +272,8 @@ def guessing_game_step_four():
             continue
 
         if guessing_the_number_four == guessing_number4:
+            return True # Return the word False along the below print statement
             print('Well done! You guessed correctly')
-            return True
         else:
             # Decrement the chances of trial by 1
             trial-=1
@@ -274,7 +282,8 @@ def guessing_game_step_four():
                 print(f"Sorry you got it wrong! You have {trial} more trials to guess the number right.\n")
             else:
                 print(f"Sorry, you have run out of trials. The number I was thinking of was {guessing_number4}.")
-                return False  
+                return False # Return the word False along the above print statement
+
 """
 Assigning the called function to a variable
 """
