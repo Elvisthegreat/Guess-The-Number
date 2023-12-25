@@ -1,5 +1,10 @@
 # import the random module
 import random
+
+"""
+Imported pickle to save complex data structure
+to the dictionary
+"""
 import pickle
  
 # Users dictionary storage
@@ -104,6 +109,7 @@ def ask_user_for_name():
 return_name = ask_user_for_name()
 print(return_name)
 
+# Research.  save users details
 save_users()
 
 """
@@ -131,7 +137,7 @@ def guessing_game_step_one():
     Assigned the number am thinking to a variable guessing_number,
     and also the chances of trial for the user
     """
-    guessing_number = random.randint(0, 0)
+    guessing_number = random.randint(0, 5)
     trial = 2
 
     while trial > 0:
