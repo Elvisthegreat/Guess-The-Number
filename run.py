@@ -162,9 +162,8 @@ def guessing_game_step_one():
             continue
         
         if guessing_the_number == guessing_number:
-            return True # Return the word False along the below print statement
             print(f"Well done! Nice guessing\n")
-        
+            return True # Return the word False along the below print statement
         else:
             # Decrement the chances o f trial by 1
             trial-=1
@@ -201,8 +200,8 @@ def guessing_game_step_two():
             continue
 
         if guessing_the_number_two == guessing_number2:
-            return True # Return the word False along the below print statement
             print("Well done! You guessed correctly")
+            return True # Return the word False along the below print statement
         else: 
             # Decrement the chances of trial by 1
             trial-=1
@@ -237,8 +236,8 @@ def guessing_game_step_three():
             continue
          
         if guessing_the_number_three == guessing_number3:
-            return True # Return the word False along the below print statement
             print("Well done! You guessed correctly")
+            return True # Return the word False along the below print statement
         else:
             # Decrement the chances of trial by 1
             trial-=1
@@ -272,8 +271,8 @@ def guessing_game_step_four():
             continue
 
         if guessing_the_number_four == guessing_number4:
-            return True # Return the word False along the below print statement
             print('Well done! You guessed correctly')
+            return True # Return the word False along the below print statement
         else:
             # Decrement the chances of trial by 1
             trial-=1
