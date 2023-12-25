@@ -1,8 +1,31 @@
 # import the random module
 import random
+import pickle
  
 # Users dictionary storage
 users = {}
+
+def load_users():
+    global users # Access the global variable users
+    try:
+        # Open the file in binary read mode
+        with open("users.pickle", "rb") as f:
+            # Load the dictionary from the file
+            users = pickle.load(f)
+    except FileNotFoundError:
+        # If the file does not exist, create an empty dictionary
+        users = {}
+
+# Define a function to save the dictionary to a file
+def save_users():
+    global users # Access the global variable users
+    # Open the file in binary write mode
+    with open("users.pickle", "wb") as f:
+        # Dump the dictionary to the file
+        pickle.dump(users, f)
+
+load_users() # Load the dictionary from the file
+
 
 def user_validation(username):
     # Check if the user exists in the database or file
@@ -15,8 +38,8 @@ def user_validation(username):
 
 def sign_in():
     """
-    Asking the user to know if he's already a user if y,
-    he will be prompt to enter his user's details, but if n, he will have to sign up
+    Asking the user to know if he's already a user if Y,
+    he will be prompt to enter his user's details, but if N, he will have to sign up
     """
     user_validating = True
     while user_validating:
@@ -80,6 +103,8 @@ def ask_user_for_name():
     
 return_name = ask_user_for_name()
 print(return_name)
+
+save_users()
 
 """
 A count down function from 10 t0 0 before the game begin
