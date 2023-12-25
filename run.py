@@ -162,7 +162,7 @@ def guessing_game_step_one():
             continue
         
         if guessing_the_number == guessing_number:
-            print(f"Well done! Nice guessing\n")
+            print(f"Well done! Nice guessing")
             return True # Return the word False along the below print statement
         else:
             # Decrement the chances o f trial by 1

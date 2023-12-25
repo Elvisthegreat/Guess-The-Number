@@ -1,32 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+# Guess The Number
+    Welcome to guess the number game, a very easy and quick start game for new user.
+    This is a game were the player have to guess the correct number, maybe 
+    between 0 to 5 or 1 to 10...depend on what stage. And in each stage the player have 
+    some amount of trials to keep guessing, and if he run out of trial the correct number
+    will be print out to the player
+    ![Screenshot (168)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/bddee2f7-2160-4ecd-b9f4-10807a3d1699)
