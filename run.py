@@ -59,7 +59,7 @@ def sign_in():
             # Check if the user exists after his inputs
             if user_validation(user_name):
                 if users[user_name] == user_password:
-                    print("Welcome back!")
+                    print("Welcome back!\n")
 
                     # Break the looping if user is validated
                     user_validating = False
@@ -106,6 +106,7 @@ def ask_user_for_name():
     with the name inputed 
     """
     print('Initializing...! Starting game in process...')
+    time.sleep(2)
     user_name = input('Please enter your sign up Name: ')
     return f"Thank you, {user_name}! Welcome to the guessing world.\n"
     
@@ -126,7 +127,7 @@ def loading_game_():
         print(f"{loading_game} seconds...\n ")
         loading_game -=1
         time.sleep(1) # Pause every 1 seconds
-    print('Loading Completed\n')
+    print('Loading Completed!\n')
 loading_game_()
 
 """
@@ -135,6 +136,7 @@ Main game board section
 
 def guessing_game_step_one():
     # Guessing from 0 to 5 with 2 chances trial
+    time.sleep(1)
     print("I'm thinking of a number from 0 to 5, can you guess what number it is?\n ")
     
     """
