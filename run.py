@@ -9,6 +9,23 @@ import pickle
 
 # imported time
 import time
+
+# Restart the game function if user decided
+def replay_game():
+    replay_game = True
+    while replay_game:
+        replay_again = input("Would you like to restart the game? Y/N\n")
+        if replay_again.upper() == "Y":
+            print('You have decided to restart again')
+            # Call the function to restart the game
+            guessing_game_step_one()
+            
+        elif replay_again.upper() == "N":
+            print("Now closing game...")
+            replay_game =  False
+        else:
+            print("Please enter Y/N")
+
  
 # Users dictionary storage
 users = {}
@@ -311,4 +328,7 @@ def guess_the_number():
 
 guess_the_number()
 print("Congratulation for completing the game to the end")
+
+replay_game()
+print("Thanks for playing")
 
