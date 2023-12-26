@@ -17,5 +17,22 @@ will be print out to the player
 * To be able to log in with their signed up name without having to register again with new name
 
 ### Site Owner Goal
- 
+* Create a game that is easy for the user to play
+* Create a game that is easy for the user to understand
+* Create an option that allow the user to sign in
+* Create an option that allow the user to login
+* Create a game from my knowledge and want to know what the user think about the the game
+* Make sure user can restart or exit the game when they play to the end
+
+### User Experience
+From what i learned from (UX). I make sure i use a simple and understandable english in a way
+users can easily read and get the the point of the game for i am creating a game not for myself
+but for others. So users experience is something i consider very important while making the
+first move for creating this game.
+
+### Targeted Audience
+* People who are looking for a simple and fun game
+* People whom just want to play a game that doesn't include violence
+* People who also want to be good at guessing
+
 
