@@ -10,7 +10,7 @@ import pickle
 # imported time
 import time
 
-# Restart the game function if user decided
+# Restart the game function if user decided to play again
 def replay_game():
     replay_game = True
     while replay_game:
@@ -130,7 +130,7 @@ def ask_user_for_name():
     """
     print('Initializing...! Starting game in process...')
     time.sleep(2)
-    user_name = input('Please enter your sign up Name: ')
+    user_name = input('Please enter again your signed up Name: ')
     return f"Thank you, {user_name}! Welcome to the guessing world.\n"
     
 return_name = ask_user_for_name()
@@ -327,7 +327,7 @@ def guess_the_number():
     print("Sorry, you didn't guess the number. It was " + str(number) + ".")
 
 guess_the_number()
-print("Congratulation for completing the game to the end")
+print("Congratulation for completing the game to the end\n")
 
 replay_game()
 print("Thanks for playing")
