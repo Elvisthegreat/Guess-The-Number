@@ -7,6 +7,10 @@ will be print out to the player
 [Link to the live website](https://guessingthenumber-4cd80cfa8d4d.herokuapp.com/)
 ![Screenshot (168)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/b7ceb541-85bb-41c0-9622-228a79d91c21)
 
+# Table of Contents
+[1.Features](#Features)<br>
+    [a.Log in](#log-in)<br>
+
 ## Features
 #### Do you already have an account
 This is the first board of the game. This section require to you to select either Y or N to know if
