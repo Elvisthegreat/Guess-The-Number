@@ -10,13 +10,25 @@ will be print out to the player
 # Table of Contents
 [1.Features](#Features)<br>
     [a.Log in](#log-in)<br>
+    [b.Sign up](#sign-up)<br>
+    [c.Initializing...! Starting game in process...](#initializing...-starting-game-in-process....)<br>
+    [d.Loading Game...](#loading-game...)<br>
+    [e.I'm thinking of a number from 0 to 5](#i'm-thinking-of-a-number-from-0-to-5)<br>
+    [f.Would you like to restart the game?](#would-you-like-to-restart-the.game)<br>
+
+[1.Project Goals](#project-goals)<br>
+    [a.Users Stories](#users-stories)<br>
+    [b.Site Owner Goals](#site-owner-goals)<br>
+    [c.User Experience](#user-experience)<br>
+    [d.Targeted Audience](#targeted-audience)<br>
+
 
 ## Features
 #### Do you already have an account
 This is the first board of the game. This section require to you to select either Y or N to know if
 you are already an existing user or not, If Y..then it ask you to input your username and passowrd, then 
 a welcome back message will be print to the terminal. But if N, you have to sign up to become a user.
-![Do you already have an account (170)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/a29c518d-1ac2-48a4-95aa-c59e4f6d9359)
+![Screenshot (177)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/d73a5de5-e828-4ec6-a16b-cfc2ba3666ed)
 
 #### Log in
 This section allow the users to log in, into there existing account if they choose Y
@@ -59,7 +71,7 @@ to play again from the beginning
 * To be able to restart game after playing to the end
 * To be able to log in with their signed up name without having to register again with new name
 
-### Site Owner Goal
+### Site Owner Goals
 * Create a game that is easy for the user to play
 * Create a game that is easy for the user to understand
 * Create an option that allow the user to sign in
