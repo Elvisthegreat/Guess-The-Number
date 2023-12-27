@@ -14,6 +14,15 @@ you are already an existing user or not, If Y..then it ask you to input your use
 a welcome back message will be print to the terminal. But if N, you have to sign up to become a user.
 ![Do you already have an account (170)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/a29c518d-1ac2-48a4-95aa-c59e4f6d9359)
 
+#### Log in
+This section allow the users to log in, into there existing account if they choose Y
+![Screenshot (174)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/5ff6ad8a-8641-4585-a0d8-edd2afb0a2f1)
+
+#### Sign up
+This section allow's users to sign up, if they don't have an existing account
+![Screenshot (175)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/0c2c409c-a5a9-405d-b125-fdbc64aa4991)
+
+
 #### Initializing...! Starting game in process...
 This section is a quick one, I thought this was also interesting to add some more flexible functionalities
 to the game from the little experience i have as i keep growing to be better with python. This section doesn't
@@ -25,14 +34,17 @@ Another functionality that i also thought that would make sense, was to also add
 before the game start as the user prepare. This section is a countdown seconds from 10 to 0, then the main game begins.
 ![Screenshot (172)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/4e7a4e83-726d-43ae-83a0-cb824ef2eb45)
 
-#### I?m think of a number from 0 to 5
+#### I'm thinking of a number from 0 to 5
 This section is the very beginning of the game after users input or log in or sign up. With this very
 beginning the user have 2 trials to guess the number correct, and if he get it wrong, on the terminal, there will 
 be printed out how many trials left and he will have to try again, and if he run out of trials, on the terminal, there will
 be printed out the random number. That how each stage of the game goes till he plays to the end.
 ![Screenshot (173)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/895936b7-2914-4b43-81a0-ba89681e342e)
 
-
+#### Would you like to restart the game?
+This section allow's the users to select one option, after playing to the end of the game...either Y or N if they decided, they want
+to play again from the beginning
+![Screenshot (176)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/190279bf-8fe9-4fb7-9939-5f840f39d10a)
 
 ## Project Goals
 ### Users Stories
