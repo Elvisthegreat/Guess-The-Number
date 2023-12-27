@@ -86,23 +86,24 @@ target audience.
    * This was used to know how to arrange some my codes that i couldn't figure out by myself
    * It was also one of the main tools i used alot to searched out some codes. like makin the
    user log in and sign up work properly and storing users details in the database e.g Dictionary
-   * And the last code for the guessing game was from the micrsoft bing searches carried out. This below
-   def guess_the_number():
-    number = random.randint(1, 100)
-    print("I'm thinking of a number between 1 and 100. Can you guess what it is?")
-    for i in range(10):
-        guess = int(input("Guess #" + str(i+1) + ": "))
-        if guess < number:
-            print("Too low!")
-        elif guess > number:
-            print("Too high!")
-        else:
-            print("Congratulations! You guessed the number in " + str(i+1) + " guesses.")
-            return
-    print("Sorry, you d
-idn't guess the number. It was " + str(number) + ".")
+   * And the last code for the guessing game was from the micrsoft bing searches carried out. This below <br>
+   
+   def guess_the_number():<br>
+    number = random.randint(1, 100)<br>
+    print("I'm thinking of a number between 1 and 100. Can you guess what it is?")<br>
+    for i in range(10):<br>
+        guess = int(input("Guess #" + str(i+1) + ": "))<br>
+        if guess < number:<br>
+            print("Too low!")<br>
+        elif guess > number:<br>
+            print("Too high!")<br>
+        else:<br>
+            print("Congratulations! You guessed the number in " + str(i+1) + " guesses.")<br>
+            return<br>
+    print("Sorry, you didn't guess the number. It was " + str(number) + ".")<br>
 
 guess_the_number()
+
 # Deployment
 
  This website was deploy with GitHub
