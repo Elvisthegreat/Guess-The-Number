@@ -87,7 +87,7 @@ target audience.
    * It was also one of the main tools i used alot to searched out some codes. like makin the
    user log in and sign up work properly and storing users details in the database e.g Dictionary
    * And the last code for the guessing game was from the micrsoft bing searches carried out. This below <br>
-   
+
    def guess_the_number():<br>
     number = random.randint(1, 100)<br>
     print("I'm thinking of a number between 1 and 100. Can you guess what it is?")<br>
@@ -103,6 +103,21 @@ target audience.
     print("Sorry, you didn't guess the number. It was " + str(number) + ".")<br>
 
 guess_the_number()
+
+## Testing
+#### Bugs
+* When i first deployed the project, i found out that..the Sign up section wasn't working 
+as expected
+* After users sign up, its wasn't breaking out from the loop, meaning...it kept asking users to sign
+after they already did
+* After deployment, i found the users{} dictionary wasn't storing user details after sign up
+* After deployment, i found the restart game function wasn't working as expected, it didn't break out from the loop, 
+that was because, where i wanted the game to start from wasn't added inside the restart game function
+
+#### Fixed Bugs
+* The Sign up
+* The users{} storage dictionary
+* The restart game
 
 # Deployment
 
