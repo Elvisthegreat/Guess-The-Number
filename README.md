@@ -99,6 +99,36 @@ target audience.
         else:
             print("Congratulations! You guessed the number in " + str(i+1) + " guesses.")
             return
-    print("Sorry, you didn't guess the number. It was " + str(number) + ".")
+    print("Sorry, you d
+idn't guess the number. It was " + str(number) + ".")
 
 guess_the_number()
+# Deployment
+
+ This website was deploy with GitHub
+[Guess The Number](https://guessingthenumber-4cd80cfa8d4d.herokuapp.com/)
+
+#### How to deploy with github <br>
+
+  1. In the GitHub repository <br>
+  2. Scroll halfway down, on the right side of your screen<br>
+  3. Click on github-pages
+  4. A list of all lastest commit will appear, then click on the following commit you want to deploy
+
+#### For the source 
+1.select Branch: master <br>
+2.After the webpage refreshes automaticaly you will see a ribbon on the top saying: Your site is published
+
+##### You can for fork the repository by following these steps:
+1.Go to the GitHub repository <br>
+2.Click on Fork button in upper right hand corner <br>
+
+##### To clone the repository by following these steps:
+1.Go to the GitHub repository <br>
+2.Locate the Code button above the list of files and click it <br>
+3.Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard 
+Open Git Bash <br>
+4.Change the current working directory to the one where you want the cloned directory <br>
+5.Type git clone and paste the URL from the clipboard <br>
+6.Press Enter to create your local clone. <br>
+
