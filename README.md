@@ -11,17 +11,32 @@ will be print out to the player
 [1.Features](#Features)<br>
     [a.Log in](#log-in)<br>
     [b.Sign up](#sign-up)<br>
-    [c.Initializing...! Starting game in process...](#initializing...-starting-game-in-process....)<br>
+    [c.Initializing...! Starting game in process...](#initializing...-starting-game-in-process...)<br>
     [d.Loading Game...](#loading-game...)<br>
     [e.I'm thinking of a number from 0 to 5](#i'm-thinking-of-a-number-from-0-to-5)<br>
     [f.Would you like to restart the game?](#would-you-like-to-restart-the.game)<br>
 
-[1.Project Goals](#project-goals)<br>
+[2.Project Goals](#project-goals)<br>
     [a.Users Stories](#users-stories)<br>
     [b.Site Owner Goals](#site-owner-goals)<br>
     [c.User Experience](#user-experience)<br>
     [d.Targeted Audience](#targeted-audience)<br>
 
+[3.Design Choices](#design-choices)<br>
+    
+[4.Language Used For This Project](#language-used-for-this-project)<br>
+    [a.Other Technologies Used For This Project](#other-technologies-used-for-this-project)<br>
+
+[5.Testing](#testing)<br>
+    [a.Bugs](#bugs)<br> 
+    [b.Fixed Bugs](#fixed-bugs)<br> 
+
+[6.Deployment](#deployment)<br>
+    [a.How to deploy with github](#how-to-deploy-with-github)<br>
+    [b.For the source](#for-the-source)<br>
+    [c.You can for fork the repository by following these steps](#you-can-for-fork-the-repository-by-following-these-steps)<br>
+    [d.To clone the repository by following these steps](#to-clone-the-repository-by-following-these-steps)<br>
+    
 
 ## Features
 #### Do you already have an account
