@@ -19,7 +19,7 @@ This section allow the users to log in, into there existing account if they choo
 ![Screenshot (174)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/5ff6ad8a-8641-4585-a0d8-edd2afb0a2f1)
 
 #### Sign up
-This section allow's users to sign up, if they don't have an existing account
+This section allow's users to sign up...if they choose N. They will have to sign up if they don't have an existing account.
 ![Screenshot (175)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/0c2c409c-a5a9-405d-b125-fdbc64aa4991)
 
 
@@ -74,4 +74,31 @@ first move for creating this game.
 * People whom just want to play a game that doesn't include violence
 * People who also want to be good at guessing
 
+## Design Choices
+This game was designed in a way of making things easily understandable! Something simple, fun and easy to play and understand. 
+From the little knowledge i have, i tried to create something i could...making it very easy and simple especially for the
+target audience.
 
+## Language Used For This Project
+* Python
+### Other Technologies Used For This Project
+* Microsoft Bing
+   * This was used to know how to arrange some my codes that i couldn't figure out by myself
+   * It was also one of the main tools i used alot to searched out some codes. like makin the
+   user log in and sign up work properly and storing users details in the database e.g Dictionary
+   * And the last code for the guessing game was from the micrsoft bing searches carried out. This below
+   def guess_the_number():
+    number = random.randint(1, 100)
+    print("I'm thinking of a number between 1 and 100. Can you guess what it is?")
+    for i in range(10):
+        guess = int(input("Guess #" + str(i+1) + ": "))
+        if guess < number:
+            print("Too low!")
+        elif guess > number:
+            print("Too high!")
+        else:
+            print("Congratulations! You guessed the number in " + str(i+1) + " guesses.")
+            return
+    print("Sorry, you didn't guess the number. It was " + str(number) + ".")
+
+guess_the_number()
