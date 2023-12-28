@@ -11,7 +11,7 @@ will be print out to the player
 [1.Features](#Features)<br>
     [a.Log in](#log-in)<br>
     [b.Sign up](#sign-up)<br>
-    [c.Initializing...! Starting game in process...](#initializing...-starting-game-in-process...)<br>
+    [c.Initializing...! Starting game in process...](#initializing...!-starting-game-in-process...)<br>
     [d.Loading Game...](#loading-game...)<br>
     [e.I'm thinking of a number from 0 to 5](#i'm-thinking-of-a-number-from-0-to-5)<br>
     [f.Would you like to restart the game?](#would-you-like-to-restart-the.game)<br>
@@ -178,4 +178,10 @@ Open Git Bash <br>
 4.Change the current working directory to the one where you want the cloned directory <br>
 5.Type git clone and paste the URL from the clipboard <br>
 6.Press Enter to create your local clone. <br>
+
+# Acknowledgement
+Just also wanted to use a moment to say thank you to my mentor Mo Shami for his support, time and encouragement,
+he was always there making sure he never forget we have an appointment.... And thanks to the student care support
+team, one thing i really just admire about them is, they always show up on time and never will one of your message
+will be left unread. And lastly, also a big hug to the slack student.
 
