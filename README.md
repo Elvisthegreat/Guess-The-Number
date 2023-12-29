@@ -115,7 +115,7 @@ target audience.
 ### Other Technologies Used For This Project
 * Microsoft Bing
    * This was used to know how to arrange some my codes that i couldn't figure out by myself
-   * It was also one of the main tools i used alot to searched out some codes. like makin the
+   * It was also one of the main tools i used alot to searched out some codes. like making the
    user log in and sign up work properly and storing users details in the database e.g Dictionary
    * And the last code for the guessing game was from the micrsoft bing searches carried out. This below <br>
 
