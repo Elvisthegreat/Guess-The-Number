@@ -187,11 +187,10 @@ def guessing_game_step_one():
 
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more + \
-                trials to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trial.\n")
             else:
-                print(f"Sorry, you have run out of trials. The number + \
-                I was thinking of was {guessing_number}.")
+                print(f"Sorry, you have run out of trials.\n The number " + \
+                      f"I was thinking of was {guessing_number}.")
                 return False
 
 
@@ -222,11 +221,10 @@ def guessing_game_step_two():
             trial -= 1
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more + \
-                trials to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trials.\n")
             else:
-                print(f"Sorry, you have run out of trials. The number + \
-                I was thinking of was {guessing_number2}.")
+                print(f"Sorry, you have run out of trials.\n The number " + \
+                      f"I was thinking of was {guessing_number2}.")
                 return False
 
 
@@ -260,8 +258,8 @@ def guessing_game_step_three():
                 print(f"Sorry you got it wrong! You have {trial} more + \
                 trials to guess the number right.\n")
             else:
-                print(f"Sorry, you have run out of trials. The number + \
-                I was thinking of was {guessing_number3}.")
+                print(f"Sorry, you have run out of trials.\n The number " + \
+                      f"I was thinking of was {guessing_number3}.")
                 return False
 
 
@@ -296,8 +294,8 @@ def guessing_game_step_four():
                 print(f"Sorry you got it wrong! You have {trial} more + \
                 trials to guess the number right.\n")
             else:
-                print(f"Sorry, you have run out of trials. The number + \
-                I was thinking of was {guessing_number4}.")
+                print(f"Sorry, you have run out of trials.\n The number " + \
+                      f"I was thinking of was {guessing_number4}.")
                 return False
 
 
