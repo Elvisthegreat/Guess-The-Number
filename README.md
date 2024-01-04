@@ -165,7 +165,15 @@ that was because, where i wanted the game to start from wasn't added inside the 
 <details>
   <summary>Click me</summary>
   1. Log in to Heroku <br>
-  ![Screenshot (184)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/556d4978-2b01-4454-9938-737c0481490e)
+  2. Create a new app <br>
+  3. Select the app name and your region, then, click create app
+  4. After the page loaded. Click Settings then scroll down
+  5. On your right hand side look for "Add buildpack"
+  6. Select python, then click Add buildpack
+  7. Select nodejs, then click Add buildpack
+  8. Scroll up to the top of your screen and click Deploy
+  9. Scroll to the middle of your screen select, connect to github
+  10. Scroll down, select Deploy branch
 </details>
 
 
