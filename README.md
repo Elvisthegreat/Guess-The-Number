@@ -155,8 +155,9 @@ that was because, where i wanted the game to start from wasn't added inside the 
 * The restart game
 
 #### CI Python Linter
-Tested the project with python linter and all errors are cleared
-![Screenshot (183)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/a765ffd8-6f4f-474b-97b9-4e409819be02)
+* Tested the project with python linter and all errors are cleared
+![Screenshot (183)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/cbdfbc29-2be4-4680-8d5b-7e724f62ec53)
+
 
 # Deployment
 
@@ -164,8 +165,7 @@ Tested the project with python linter and all errors are cleared
 <details>
   <summary>Click me</summary>
   1. Log in to Heroku <br>
-  ![Screenshot (184)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/588bddbb-b2ec-469e-a5bf-9239981b5d0b)
-
+  ![Screenshot (184)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/556d4978-2b01-4454-9938-737c0481490e)
 </details>
 
 
