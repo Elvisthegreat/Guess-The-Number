@@ -160,6 +160,15 @@ Tested the project with python linter and all errors are cleared
 
 # Deployment
 
+#### How to deploy with Heroku <br>
+<details>
+  <summary>Click me</summary>
+  1. Log in to Heroku <br>
+  ![Screenshot (184)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/588bddbb-b2ec-469e-a5bf-9239981b5d0b)
+
+</details>
+
+
  This website was deploy with GitHub
 [Guess The Number](https://guessingthenumber-4cd80cfa8d4d.herokuapp.com/)
 
