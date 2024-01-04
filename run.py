@@ -11,16 +11,22 @@ def replay_game():
     """
     replay_game = True
     while replay_game:
-        replay_again = input("Would you like to restart the game? Y/N\n")
+        replay_again = input("Would you like to restart the game? Y/N: ")
         if replay_again.upper() == "Y":
-            print('You have decided to restart again')
-            # Call the function to restart the game
+            print('You have decided to restart again \n')
+            """
+            Call the functions to restart the game
+            """
             guessing_game_step_one()
+            guessing_game_step_two()
+            guessing_game_step_three()
+            guessing_game_step_four()
+            guess_the_number()
         elif replay_again.upper() == "N":
             print("Now closing game...")
             replay_game = False
         else:
-            print("Please enter Y/N")
+            print("Please enter Y/N: ")
 
 
 users = {}  # Users dictionary storage
@@ -74,7 +80,7 @@ def sign_in():
     user_validating = True
     while user_validating:
 
-        user_validating_sign_in = input("Do you have an account? Y/N \n")
+        user_validating_sign_in = input("Do you have an account? Y/N: ")
         if user_validating_sign_in.upper() == "Y":
             user_name = input("Enter your username: ")
             user_password = input("Enter your password: ")
@@ -174,7 +180,7 @@ def guessing_game_step_one():
 
         # Use a try and except block to validate the user input
         try:
-            guessing_the_number = int(input('Can you try and guess?\n'))
+            guessing_the_number = int(input('Can you try and guess?: '))
         except ValueError:
             print('Invalid input. Please try again.\n')
             continue
@@ -208,7 +214,7 @@ def guessing_game_step_two():
     while trial > 0:
         # Use a try and except block to validate the user input
         try:
-            guessing_the_number_two = int(input('Can you try and guess?\n'))
+            guessing_the_number_two = int(input('Can you try and guess?: '))
         except ValueError:
             print('Invalid input. Please try again.\n')
             continue
@@ -242,7 +248,7 @@ def guessing_game_step_three():
     while trial > 0:
         # Use a try and except block to validate the user input
         try:
-            guessing_the_number_three = int(input('Can you try and guess?\n'))
+            guessing_the_number_three = int(input('Can you try and guess?: '))
         except ValueError:
             print('Invalid input. Please try again.\n')
             continue
@@ -255,8 +261,7 @@ def guessing_game_step_three():
             trial -= 1
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more + \
-                trials to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} more trials\n")
             else:
                 print(f"Sorry, you have run out of trials.\n The number " + \
                       f"I was thinking of was {guessing_number3}.")
@@ -278,21 +283,20 @@ def guessing_game_step_four():
     while trial > 0:
         # Use a try and except block to validate the user input
         try:
-            guessing_the_number_four = int(input("Can you try and guess?\n"))
+            guessing_the_number_four = int(input("Can you try and guess?: "))
         except ValueError:
             print('Invalid input. Please try again.\n')
             continue
 
         if guessing_the_number_four == guessing_number4:
-            print('Well done! You guessed correctly')
+            print('Well done! You guessed correctly \n')
             return True
         else:
             # Decrement the chances of trial by 1
             trial -= 1
             if trial > 0:
                 # Returning how many trials left to the user to try again
-                print(f"Sorry you got it wrong! You have {trial} more + \
-                trials to guess the number right.\n")
+                print(f"Sorry you got it wrong! You have {trial} trials.\n")
             else:
                 print(f"Sorry, you have run out of trials.\n The number " + \
                       f"I was thinking of was {guessing_number4}.")
@@ -306,8 +310,9 @@ print(guess_step_four)
 def guess_the_number():
     # 5th guessing section
     number = random.randint(1, 100)
-    print("I'm thinking of a number between 1 and 100. + \
-    Can you guess what it is?")
+    print("Welcome to stage 5 \n")
+    print("I'm thinking of a number between 1 and 100." + \
+          f"Can you guess what it is?")
     for i in range(10):
         guess = int(input("Guess #" + str(i+1) + ": "))
         if guess < number:
@@ -315,8 +320,8 @@ def guess_the_number():
         elif guess > number:
             print("Too high!")
         else:
-            print("Congratulations! + \
-            You guessed the number in " + str(i+1) + " guesses.")
+            print("Congratulations!" + \
+                  f"You guessed the number in " + str(i+1) + " guesses.\n")
             return
     print("Sorry, you didn't guess the number. It was " + str(number) + ".")
 
