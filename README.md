@@ -95,7 +95,7 @@ to play again from the beginning
 * Make sure user can restart or exit the game when they play to the end
 
 ### User Experience
-From what i learned from (UX). I make sure i use a simple and understandable english in a way
+From (UX). I make sure i use a simple and understandable language in a way
 users can easily read and get the the point of the game for i am creating a game not for myself
 but for others. So users experience is something i consider very important while making the
 first move for creating this game.
@@ -113,7 +113,7 @@ target audience.
 ## Language Used For This Project
 * Python
 ### Other Technologies Used For This Project
-* Microsoft Bing
+##### Microsoft Bing
    * This was used to know how to arrange some my codes that i couldn't figure out by myself
    * It was also one of the main tools i used alot to searched out some codes. like making the
    user log in and sign up work properly and storing users details in the database e.g Dictionary
@@ -135,6 +135,10 @@ target audience.
 
 guess_the_number()
 
+##### Google
+* Was used as the same as miscrosoft bing. I was used to know how make some structure of the game
+* Was used to search out some code's
+
 ## Testing
 #### Bugs
 * When i first deployed the project, i found out that..the Sign up section wasn't working 
@@ -149,6 +153,10 @@ that was because, where i wanted the game to start from wasn't added inside the 
 * The Sign up
 * The users{} storage dictionary
 * The restart game
+
+#### CI Python Linter
+Tested the project with python linter and all errors are cleared
+![Screenshot (183)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/a765ffd8-6f4f-474b-97b9-4e409819be02)
 
 # Deployment
 
