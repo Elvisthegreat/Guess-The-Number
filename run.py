@@ -193,10 +193,14 @@ def guessing_game_step_one():
 
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trial.\n")
+                print(
+                    f"Sorry you got it wrong! You have {trial} more trial.\n"
+                    )
             else:
-                print(f"Sorry, you have run out of trials.\n The number " + \
-                      f"I was thinking of was {guessing_number}.")
+                print(
+                    f"Sorry, you have run out of trials.\n The number "
+                    f"I was thinking of was {guessing_number}."
+                      )
                 return False
 
 
@@ -227,10 +231,14 @@ def guessing_game_step_two():
             trial -= 1
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trials.\n")
+                print(
+                    f"Sorry you got it wrong! You have {trial} more trials.\n"
+                    )
             else:
-                print(f"Sorry, you have run out of trials.\n The number " + \
-                      f"I was thinking of was {guessing_number2}.")
+                print(
+                    f"Sorry, you have run out of trials.\n The number "
+                    f"I was thinking of was {guessing_number2}."
+                    )
                 return False
 
 
@@ -261,10 +269,14 @@ def guessing_game_step_three():
             trial -= 1
             # Returning how many trials left to the user to try again
             if trial > 0:
-                print(f"Sorry you got it wrong! You have {trial} more trials\n")
+                print(
+                    f"Sorry you got it wrong! You have {trial} more trials\n"
+                    )
             else:
-                print(f"Sorry, you have run out of trials.\n The number " + \
-                      f"I was thinking of was {guessing_number3}.")
+                print(
+                    f"Sorry, you have run out of trials.\n The number "
+                    f"I was thinking of was {guessing_number3}."
+                    )
                 return False
 
 
@@ -298,8 +310,10 @@ def guessing_game_step_four():
                 # Returning how many trials left to the user to try again
                 print(f"Sorry you got it wrong! You have {trial} trials.\n")
             else:
-                print(f"Sorry, you have run out of trials.\n The number " + \
-                      f"I was thinking of was {guessing_number4}.")
+                print(
+                    f"Sorry, you have run out of trials.\n The number "
+                    f"I was thinking of was {guessing_number4}."
+                    )
                 return False
 
 
@@ -311,7 +325,7 @@ def guess_the_number():
     # 5th guessing section
     number = random.randint(1, 100)
     print("Welcome to stage 5 \n")
-    print("I'm thinking of a number between 1 and 100." + \
+    print("I'm thinking of a number between 1 and 100."
           f"Can you guess what it is?")
     for i in range(10):
         guess = int(input("Guess #" + str(i+1) + ": "))
@@ -320,8 +334,10 @@ def guess_the_number():
         elif guess > number:
             print("Too high!")
         else:
-            print("Congratulations!" + \
-                  f"You guessed the number in " + str(i+1) + " guesses.\n")
+            print(
+                 "Congratulations!"
+                 f"You guessed the number in " + str(i+1) + " guesses.\n"
+                 )
             return
     print("Sorry, you didn't guess the number. It was " + str(number) + ".")
 
