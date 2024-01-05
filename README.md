@@ -36,8 +36,47 @@ will be print out to the player
     [b.For the source](#for-the-source)<br>
     [c.You can for fork the repository by following these steps](#you-can-for-fork-the-repository-by-following-these-steps)<br>
     [d.To clone the repository by following these steps](#to-clone-the-repository-by-following-these-steps)<br>
-    
 
+ ## Project Goals
+### Users Stories
+* To be able to play guess the number
+* To be able to have the flexibility of the game
+* To be able to sign up
+* To be able to play without bugs stress
+* To be able to restart game after playing to the end
+* To be able to log in with their signed up name without having to register again with new name
+
+### Site Owner Goals
+* Create a game that is easy for the user to play
+* Create a game that is easy for the user to understand
+* Create an option that allow the user to sign in
+* Create an option that allow the user to login
+* Create a game from my knowledge and want to know what the user think about the the game
+* Make sure user can restart or exit the game when they play to the end
+
+### User Experience
+From (UX). I make sure i use a simple and understandable language in a way
+users can easily read and get the the point of the game for i am creating a game not for myself
+but for others. So users experience is something i consider very important while making the
+first move for creating this game.
+
+### Targeted Audience
+* People who are looking for a simple and fun game
+* People whom just want to play a game that doesn't include violence
+* People who also want to be good at guessing
+
+### Users Requirement and Expections
+* A simple fun game
+* Easy to register and log in
+* Less stress and easy to play
+* Game work has expected 
+* Easy to understand and less jargons
+
+## Design Choices
+This game was designed in a way of making things easily understandable! Something simple, fun and easy to play and understand. 
+From the little knowledge i have, i tried to create something i could...making it very easy and simple especially for the
+target audience.
+   
 ## Features
 #### Do you already have an account
 This is the first board of the game. This section require to you to select either Y or N to know if
@@ -77,41 +116,14 @@ This section allow's the users to select one option, after playing to the end of
 to play again from the beginning
 ![Screenshot (176)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/190279bf-8fe9-4fb7-9939-5f840f39d10a)
 
-## Project Goals
-### Users Stories
-* To be able to play guess the number
-* To be able to have the flexibility of the game
-* To be able to sign up
-* To be able to play without bugs stress
-* To be able to restart game after playing to the end
-* To be able to log in with their signed up name without having to register again with new name
-
-### Site Owner Goals
-* Create a game that is easy for the user to play
-* Create a game that is easy for the user to understand
-* Create an option that allow the user to sign in
-* Create an option that allow the user to login
-* Create a game from my knowledge and want to know what the user think about the the game
-* Make sure user can restart or exit the game when they play to the end
-
-### User Experience
-From (UX). I make sure i use a simple and understandable language in a way
-users can easily read and get the the point of the game for i am creating a game not for myself
-but for others. So users experience is something i consider very important while making the
-first move for creating this game.
-
-### Targeted Audience
-* People who are looking for a simple and fun game
-* People whom just want to play a game that doesn't include violence
-* People who also want to be good at guessing
-
-## Design Choices
-This game was designed in a way of making things easily understandable! Something simple, fun and easy to play and understand. 
-From the little knowledge i have, i tried to create something i could...making it very easy and simple especially for the
-target audience.
-
 ## Language Used For This Project
 * Python
+
+### Python Libraries Used
+* random - was used to generate random numbers for the game
+* pickle - this was used to save the users data structure into the dictionary
+* time - this was used to for the time.sleep, to slow down so part of the game
+
 ### Other Technologies Used For This Project
 ##### Microsoft Bing
    * This was used to know how to arrange some my codes that i couldn't figure out by myself
@@ -138,6 +150,11 @@ guess_the_number()
 ##### Google
 * Was used as the same as miscrosoft bing. I was used to know how make some structure of the game
 * Was used to search out some code's
+
+### Other websites/tools used
+- [GitHub](https://github.com/) was used for saving and storing files.
+- [GitPod](https://www.gitpod.io/) was the IDE used for writing code.
+- [Heroku](https://www.heroku.com/) was used as the deploying platform for this site.
 
 ## Testing
 #### Bugs
