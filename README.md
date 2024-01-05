@@ -14,7 +14,7 @@ will be print out to the player
     [c.User Experience](#user-experience)<br>
     [d.Targeted Audience](#targeted-audience)<br>
 
-[2.Users Requirement and Expections](users-requirement-and-expections)<br>
+[2.Users Requirement and Expections](#users-requirement-and-expections)<br>
 
 [3.Design Choices](#design-choices)<br>
 
@@ -28,14 +28,14 @@ will be print out to the player
     
 [5.Language Used For This Project](#language-used-for-this-project)<br>
     [a.Other Technologies Used For This Project](#other-technologies-used-for-this-project)<br>
-    [b.Google](google)<br>
+    [b.Google](#google)<br>
 
-[6.Python Libraries Used](python-libraries-used)<br>
+[6.Python Libraries Used](#python-libraries-used)<br>
 
-[7.Other websites/tools used](Other-websites/-tools-used)<br>
-    [a.GitHub](https://github.com/)<br>
-    [b.GitPod](https://www.gitpod.io/)<br>
-    [c.Heroku](https://www.heroku.com/)<br>
+[7.Other websites/tools used](#Other-websites/-tools-used)<br>
+    [a.GitHub](#https://github.com/)<br>
+    [b.GitPod](#https://www.gitpod.io/)<br>
+    [c.Heroku](#https://www.heroku.com/)<br>
 
 [8.Testing](#testing)<br>
     [a.Bugs](#bugs)<br> 
