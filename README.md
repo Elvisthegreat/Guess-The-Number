@@ -186,7 +186,7 @@ that was because, where i wanted the game to start from wasn't added inside the 
 #### CI Python Linter
 * Tested the project with python linter and all errors are cleared
 ![Screenshot (183)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/cbdfbc29-2be4-4680-8d5b-7e724f62ec53)
-![pep8live (183)](https://pep8ci.herokuapp.com/)
+[pep8live (183)](https://pep8ci.herokuapp.com/)
 
 # Deployment
 
