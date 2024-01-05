@@ -8,30 +8,40 @@ will be print out to the player
 ![Screenshot (168)](https://github.com/Elvisthegreat/Rock-paper-scissors/assets/141064225/b7ceb541-85bb-41c0-9622-228a79d91c21)
 
 # Table of Contents
-[1.Features](#Features)<br>
+[1.Project Goals](#project-goals)<br>
+    [a.Users Stories](#users-stories)<br>
+    [b.Site Owner Goals](#site-owner-goals)<br>
+    [c.User Experience](#user-experience)<br>
+    [d.Targeted Audience](#targeted-audience)<br>
+
+[2.Users Requirement and Expections](users-requirement-and-expections)<br>
+
+[3.Design Choices](#design-choices)<br>
+
+[4.Features](#Features)<br>
     [a.Log in](#log-in)<br>
     [b.Sign up](#sign-up)<br>
     [c.Initializing...! Starting game in process...](#initializing...!-starting-game-in-process...)<br>
     [d.Loading Game...](#loading-game...)<br>
     [e.I'm thinking of a number from 0 to 5](#i'm-thinking-of-a-number-from-0-to-5)<br>
     [f.Would you like to restart the game?](#would-you-like-to-restart-the.game)<br>
-
-[2.Project Goals](#project-goals)<br>
-    [a.Users Stories](#users-stories)<br>
-    [b.Site Owner Goals](#site-owner-goals)<br>
-    [c.User Experience](#user-experience)<br>
-    [d.Targeted Audience](#targeted-audience)<br>
-
-[3.Design Choices](#design-choices)<br>
     
-[4.Language Used For This Project](#language-used-for-this-project)<br>
+[5.Language Used For This Project](#language-used-for-this-project)<br>
     [a.Other Technologies Used For This Project](#other-technologies-used-for-this-project)<br>
+    [b.Google](google)<br>
 
-[5.Testing](#testing)<br>
+[6.Python Libraries Used](python-libraries-used)<br>
+
+[7.Other websites/tools used](Other-websites/-tools-used)<br>
+    [a.GitHub](https://github.com/)<br>
+    [b.GitPod](https://www.gitpod.io/)<br>
+    [c.Heroku](https://www.heroku.com/)<br>
+
+[8.Testing](#testing)<br>
     [a.Bugs](#bugs)<br> 
     [b.Fixed Bugs](#fixed-bugs)<br> 
 
-[6.Deployment](#deployment)<br>
+[9.Deployment](#deployment)<br>
     [a.How to deploy with github](#how-to-deploy-with-github)<br>
     [b.For the source](#for-the-source)<br>
     [c.You can for fork the repository by following these steps](#you-can-for-fork-the-repository-by-following-these-steps)<br>
@@ -119,11 +129,6 @@ to play again from the beginning
 ## Language Used For This Project
 * Python
 
-### Python Libraries Used
-* random - was used to generate random numbers for the game
-* pickle - this was used to save the users data structure into the dictionary
-* time - this was used to for the time.sleep, to slow down so part of the game
-
 ### Other Technologies Used For This Project
 ##### Microsoft Bing
    * This was used to know how to arrange some my codes that i couldn't figure out by myself
@@ -150,6 +155,11 @@ guess_the_number()
 ##### Google
 * Was used as the same as miscrosoft bing. I was used to know how make some structure of the game
 * Was used to search out some code's
+
+### Python Libraries Used
+* random - was used to generate random numbers for the game
+* pickle - this was used to save the users data structure into the dictionary
+* time - this was used to for the time.sleep, to slow down so part of the game
 
 ### Other websites/tools used
 - [GitHub](https://github.com/) was used for saving and storing files.
