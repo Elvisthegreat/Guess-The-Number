@@ -41,9 +41,9 @@ will be print out to the player
     [a.Bugs](#bugs)<br> 
     [b.Fixed Bugs](#fixed-bugs)<br> 
 
-[9.CI Python Linter](ci-python-linter)<br>
+[9.CI Python Linter](#ci-python-linter)<br>
 
-[9.Deployment](#deployment)<br>
+[10.Deployment](#deployment)<br>
     [a.How to deploy with github](#how-to-deploy-with-github)<br>
     [b.For the source](#for-the-source)<br>
     [c.You can for fork the repository by following these steps](#you-can-for-fork-the-repository-by-following-these-steps)<br>
