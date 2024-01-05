@@ -33,9 +33,9 @@ will be print out to the player
 [6.Python Libraries Used](#python-libraries-used)<br>
 
 [7.Other websites/tools used](#Other-websites/-tools-used)<br>
-    [a.GitHub](#https://github.com/)<br>
-    [b.GitPod](#https://www.gitpod.io/)<br>
-    [c.Heroku](#https://www.heroku.com/)<br>
+    [a.GitHub](#github)<br>
+    [b.GitPod](#gitpod)<br>
+    [c.Heroku](#heroku)<br>
 
 [8.Testing](#testing)<br>
     [a.Bugs](#bugs)<br> 
